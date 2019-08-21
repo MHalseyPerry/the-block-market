@@ -2,12 +2,3 @@
     text-align: center;
     padding: 2rem;
 }
-
-.items{
-    display:flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    padding: 2rem;
-    border-radius: 15px;
-    background-color: rgb(198,198,198);
-}

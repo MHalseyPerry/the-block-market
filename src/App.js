@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Item } from './components/Item';
+import { Inventory } from './components/Inventory';
 import './App.css';
 
 class App extends Component {
@@ -22,14 +22,10 @@ class App extends Component {
                     <img src="/img/logo.png"/>
                 </div>
 
-                <div className="items">
-                    {this.state.items.map((item) => (
-                        <Item
-                            key={`${item.type}_${item.meta}`}
-                            item={item}
-                        />
-                    ))}
-                </div>
+                <Inventory
+                    items={this.state.items.slice(0,20)}
+                />
+
             </div>
         );
     }
